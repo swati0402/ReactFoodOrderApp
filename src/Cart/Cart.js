@@ -28,7 +28,8 @@ const Cart = props => {
             method:'POST',
             body: JSON.stringify({
                 user:userData,
-                orderedItems:cartCtx.items
+                orderedItems:cartCtx.items,
+                orderDate:new Date().toLocaleString()
             })
         })
 
